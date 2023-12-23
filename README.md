@@ -1,6 +1,6 @@
 # 2048 Game
 
-## Instructions to deploy with Docker
+## Deploy with Docker
 
 Build the image and tag it with the name 2048:
 
