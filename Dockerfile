@@ -16,4 +16,5 @@ RUN git clone https://github.com/chandradeoarya/2048.git .
 RUN rm -rf /usr/share/nginx/html/* && \
     cp -r * /usr/share/nginx/html/
 
+# Makes port 80 accessible to the container
 EXPOSE 80
