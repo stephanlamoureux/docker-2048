@@ -1,4 +1,6 @@
-# Pull the nginx image from Docker Hub
+# syntax=docker/dockerfile:1
+
+# Pull the Nginx image from Docker Hub
 FROM nginx
 
 # Install git and clean up the package list afterward
@@ -16,5 +18,5 @@ RUN git clone https://github.com/chandradeoarya/2048.git .
 RUN rm -rf /usr/share/nginx/html/* && \
     cp -r * /usr/share/nginx/html/
 
-# Documents that port 80 accessible to the container
+# Documents that port 80 is accessible to the container
 EXPOSE 80
